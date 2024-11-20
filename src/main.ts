@@ -1,5 +1,6 @@
 import './style.css';
+import { loadHomePage } from './pages/home';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  
-`;
+document.addEventListener('DOMContentLoaded', () => {
+  loadHomePage();
+});
