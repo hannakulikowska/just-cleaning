@@ -1,5 +1,5 @@
-import { createBanner } from '../sections/banner';
-import { createHeader } from '../sections/header';
+import { createBanner } from '../components/banner/banner';
+import { createHeader } from '../components/header/header';
 
 export function loadHomePage() {
   const mainContainer = document.createElement('div');

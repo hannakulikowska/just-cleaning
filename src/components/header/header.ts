@@ -1,9 +1,9 @@
-import { createBurgerButton } from '../components/burgerButton';
-import { createLogo } from '../components/logo';
-import { createNav } from '../components/nav';
-import { createOverlay } from '../components/overlay';
-import { createPhoneButton } from '../components/phoneButton';
-import { toggleMenu } from '../utils/toggleMenu';
+import { createBurgerButton } from './burgerButton';
+import { createLogo } from './logo';
+import { createNav } from './nav';
+import { createOverlay } from './overlay';
+import { createPhoneButton } from './phoneButton';
+import { toggleMenu } from '../../utils/toggleMenu';
 
 export function createHeader() {
   const header = document.createElement('header');

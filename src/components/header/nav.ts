@@ -1,4 +1,4 @@
-import { createCloseButton } from './closeButton';
+import { createCloseButton } from '../closeButton';
 
 export function createNav() {
   const nav = document.createElement('nav');
