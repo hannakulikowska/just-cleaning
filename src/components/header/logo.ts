@@ -1,4 +1,4 @@
-import Logo from '../assets/images/logo-white-986-320.png';
+import Logo from '/src/assets/images/logo-white-986-320.png';
 
 export function createLogo() {
   const container = document.createElement('div');

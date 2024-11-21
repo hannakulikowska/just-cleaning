@@ -1,4 +1,4 @@
-import PhoneIcon from '../assets/svg/calling-icon.svg';
+import PhoneIcon from '/src/assets/svg/calling-icon.svg';
 
 export function createPhoneButton() {
   const container = document.createElement('div');

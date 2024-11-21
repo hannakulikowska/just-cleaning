@@ -1,4 +1,4 @@
-import BannerImage from '../assets/images/cleaning.jpg';
+import BannerImage from '/src/assets/images/cleaning.jpg';
 
 export function createBanner() {
   const bannerSection = document.createElement('section');
