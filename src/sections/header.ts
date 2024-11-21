@@ -10,7 +10,7 @@ export function createHeader() {
     'max-w-9xl absolute left-0 right-0 mx-auto w-full flex items-center justify-between bg-transparent pt-6';
 
   const burgerButton = createBurgerButton();
-  const nav = createNav();
+  const { nav, closeButton } = createNav();
   const overlay = createOverlay();
 
   burgerButton.addEventListener('click', () => {
@@ -19,14 +19,17 @@ export function createHeader() {
     overlay.classList.toggle('translate-x-full');
   });
 
-  overlay.addEventListener('click', () => {
+  const toggleMenu = () => {
     nav.classList.toggle('translate-x-full');
     overlay.classList.toggle('translate-x-full');
     nav.classList.remove('delay-200');
     setTimeout(() => {
       nav.classList.remove('transition-all', 'duration-300');
     }, 300);
-  });
+  };
+
+  overlay.addEventListener('click', toggleMenu);
+  closeButton.addEventListener('click', toggleMenu);
 
   document.body.appendChild(overlay);
 

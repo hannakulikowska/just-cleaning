@@ -1,3 +1,5 @@
+import { createCloseButton } from './closeButton';
+
 export function createNav() {
   const nav = document.createElement('nav');
   nav.className =
@@ -7,13 +9,16 @@ export function createNav() {
   ul.className = 'list-none lg:flex lg:items-center justify-around divide-y lg:divide-y-0';
   nav.appendChild(ul);
 
+  const closeButton = createCloseButton();
+  nav.appendChild(closeButton);
+
   const navLinks = [
     { text: 'Strona główna', href: '/', isCurrent: true },
     { text: 'Usługi', href: '/services', isCurrent: false },
     { text: 'Kontakt', href: '/contact', isCurrent: false },
   ].map(({ text, href, isCurrent }) => {
     const li = document.createElement('li');
-    li.className = 'relative px-6 lg:px-10 pt-6 pb-6 lg:dots group cursor-pointer';
+    li.className = 'relative px-6 lg:px-10 py-8 lg:dots group cursor-pointer';
     const link = document.createElement('a');
     li.appendChild(link);
     link.href = href;
@@ -26,5 +31,5 @@ export function createNav() {
   });
   navLinks.forEach((li) => ul.appendChild(li));
 
-  return nav;
+  return { nav, closeButton };
 }
