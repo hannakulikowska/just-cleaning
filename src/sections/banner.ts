@@ -1,4 +1,4 @@
-import BannerImage from '../assets/images/istockphoto-854410184-1024x1024.jpg';
+import BannerImage from '../assets/images/cleaning.jpg';
 
 export function createBanner() {
   const bannerSection = document.createElement('section');
@@ -11,7 +11,7 @@ export function createBanner() {
 
   bannerImage.src = BannerImage;
   bannerImage.alt = 'Sofa extracting cleaning';
-  bannerImage.className = 'w-full h-full max-h-[90vh] object-cover object-top rounded-3xl';
+  bannerImage.className = 'w-full h-full max-h-[90vh] object-cover object-right rounded-3xl';
 
   bannerSection.appendChild(bannerContainer);
   bannerContainer.appendChild(bannerImage);
