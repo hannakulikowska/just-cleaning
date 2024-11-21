@@ -1,7 +1,7 @@
 export function createBurgerButton() {
   const burgerButton = document.createElement('button');
   burgerButton.className =
-    'lg:hidden flex flex-col justify-between w-[50px] h-[44px] p-3 mt-4 mr-12 lg:mr-0 bg-transparent rounded-full border-none focus:outline-none group order-3 lg:order-2';
+    'lg:hidden flex flex-col justify-between w-[50px] h-[44px] p-3 mt-4 lg:mr-0 bg-transparent rounded-full group order-3 lg:order-2';
   burgerButton.setAttribute('aria-label', 'Toggle navigation');
   burgerButton.setAttribute('title', 'Menu');
 
