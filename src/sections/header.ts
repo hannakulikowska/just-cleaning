@@ -3,6 +3,7 @@ import { createLogo } from '../components/logo';
 import { createNav } from '../components/nav';
 import { createOverlay } from '../components/overlay';
 import { createPhoneButton } from '../components/phoneButton';
+import { toggleMenu } from '../utils/toggleMenu';
 
 export function createHeader() {
   const header = document.createElement('header');
@@ -13,23 +14,11 @@ export function createHeader() {
   const { nav, closeButton } = createNav();
   const overlay = createOverlay();
 
-  burgerButton.addEventListener('click', () => {
-    nav.classList.add('transition-all', 'duration-300', 'delay-200');
-    nav.classList.toggle('translate-x-full');
-    overlay.classList.toggle('translate-x-full');
-  });
+  const ANIMATION_DURATION = 300;
 
-  const toggleMenu = () => {
-    nav.classList.toggle('translate-x-full');
-    overlay.classList.toggle('translate-x-full');
-    nav.classList.remove('delay-200');
-    setTimeout(() => {
-      nav.classList.remove('transition-all', 'duration-300');
-    }, 300);
-  };
-
-  overlay.addEventListener('click', toggleMenu);
-  closeButton.addEventListener('click', toggleMenu);
+  burgerButton.addEventListener('click', () => toggleMenu(nav, overlay, ANIMATION_DURATION));
+  overlay.addEventListener('click', () => toggleMenu(nav, overlay, ANIMATION_DURATION));
+  closeButton.addEventListener('click', () => toggleMenu(nav, overlay, ANIMATION_DURATION));
 
   document.body.appendChild(overlay);
 
