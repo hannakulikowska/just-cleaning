@@ -7,7 +7,7 @@ export function createPhoneButton() {
   const srText = document.createElement('span');
 
   container.className =
-    'basis-1/3 hidden sm:flex items-center justify-end mt-4 group order-2 lg:order-3 ml-auto lg:ml-0';
+    'basis-1/3 hidden sm:flex items-center justify-end mt-4 group order-2 lg:order-3 ml-auto lg:ml-0 z-[9]';
 
   phoneButton.href = 'tel:+48506395584';
   phoneButton.className =

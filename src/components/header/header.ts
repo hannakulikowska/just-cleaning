@@ -8,7 +8,7 @@ import { toggleMenu } from '../../utils/toggleMenu';
 export function createHeader() {
   const header = document.createElement('header');
   header.className =
-    'max-w-9xl absolute left-0 right-0 mx-auto w-full flex items-center justify-between bg-transparent pt-6 px-12';
+    'max-w-9xl absolute z-[8] left-0 right-0 mx-auto w-full flex items-center justify-between bg-transparent pt-6 px-12';
 
   const burgerButton = createBurgerButton();
   const { nav, closeButton } = createNav();
@@ -20,12 +20,11 @@ export function createHeader() {
   overlay.addEventListener('click', () => toggleMenu(nav, overlay, ANIMATION_DURATION));
   closeButton.addEventListener('click', () => toggleMenu(nav, overlay, ANIMATION_DURATION));
 
-  document.body.appendChild(overlay);
-
   header.appendChild(createLogo());
   header.appendChild(createPhoneButton());
   header.appendChild(burgerButton);
   header.appendChild(nav);
+  header.appendChild(overlay);
 
   return header;
 }
