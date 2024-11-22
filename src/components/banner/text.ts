@@ -20,7 +20,7 @@ export function createText() {
 
   subtitle.textContent = 'Serwis sprzątający';
   title.textContent = 'Pranie mebli tapicerowanych';
-  content.textContent = 'Profesjonalny sprzęt i chemia';
+  content.textContent = 'Profesjonalny sprzęt i skuteczna chemia';
 
   icon.src = ShineIcon;
   icon.alt = '';
