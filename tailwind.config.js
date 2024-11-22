@@ -12,6 +12,9 @@ export default {
       padding: "1rem",
     },
     extend: {
+      screens: {
+        'xs': '480px',
+      },
       maxWidth: {
         '8xl': '96rem',
         '9xl': '112rem',
@@ -45,15 +48,24 @@ export default {
       })
       addComponents({
         '.btn': {
-          padding: '.5rem 1rem',
-          borderRadius: '.25rem',
-          fontWeight: '600',
+          fontFamily: theme('fontFamily.quicksand'),
+          fontWeight: theme('fontWeight.semibold'),
+          borderRadius: theme('borderRadius.full'),
+          transition: 'all 0.3s ease-in-out',
         },
         '.btn-primary': {
           backgroundColor: theme('colors.primary'),
           color: theme('colors.white'),
           '&:hover': {
             backgroundColor: theme('colors.secondary'),
+          },
+        },
+        '.btn-white': {
+          backgroundColor: theme('colors.white'),
+          color: theme('colors.dark'),
+          '&:hover': {
+            backgroundColor: theme('colors.secondary'),
+            color: theme('colors.white'),
           },
         },
         '.btn-transparent': {
