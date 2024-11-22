@@ -17,8 +17,8 @@ export function createButtons() {
     'Skontaktuj się z nami'
   );
 
-  buttonsContainer.appendChild(buttonContact);
   buttonsContainer.appendChild(buttonOffer);
+  buttonsContainer.appendChild(buttonContact);
 
   return buttonsContainer;
 }
