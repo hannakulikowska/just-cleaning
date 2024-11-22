@@ -5,7 +5,7 @@ export function createLogo() {
   const link = document.createElement('a');
   const logo = document.createElement('img');
 
-  container.className = 'basis-1/3 mt-4 z-[9]';
+  container.className = 'basis-1/3 mt-4 z-[9] pl-2';
   link.href = '/';
   link.className = '';
 

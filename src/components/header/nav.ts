@@ -3,7 +3,7 @@ import { createCloseButton } from '../closeButton';
 export function createNav() {
   const nav = document.createElement('nav');
   nav.className =
-    'fixed z-[100] top-0 right-0 translate-x-full lg:translate-x-0 lg:static w-64 lg:w-full lg:max-w-fit h-screen lg:h-full bg-neutral rounded-none lg:rounded-b-3xl ml-4 lg:ml-0 pt-4 lg:px-10 lg:pt-0 basis-1/3';
+    'fixed z-[100] top-0 right-0 translate-x-full lg:translate-x-0 lg:static w-64 lg:w-full lg:max-w-fit h-screen lg:h-full bg-neutral rounded-none lg:rounded-b-3xl pt-4 lg:px-10 lg:pt-0 basis-1/3';
 
   const ul = document.createElement('ul');
   ul.className = 'list-none lg:flex lg:items-center justify-around divide-y lg:divide-y-0';

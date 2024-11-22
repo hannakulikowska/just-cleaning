@@ -8,7 +8,7 @@ export function createBanner() {
   const overlay = document.createElement('div');
 
   bannerSection.id = 'banner-section';
-  bannerSection.className = 'w-full bg-neutral pt-6';
+  bannerSection.className = 'w-full bg-neutral pt-2 sm:pt-6';
   bannerContainer.className =
     'relative w-full max-w-9xl max-h-[90vh] mx-auto overflow-hidden rounded-3xl';
   bannerImage.src = BannerImage;

@@ -6,7 +6,7 @@ export function loadHomePage() {
   const mainContent = document.createElement('main');
 
   mainContainer.id = 'home-page';
-  mainContainer.className = 'relative min-h-screen bg-neutral px-6';
+  mainContainer.className = 'relative min-h-screen bg-neutral px-2 sm:px-6';
 
   mainContainer.appendChild(createHeader());
   mainContainer.appendChild(mainContent);
