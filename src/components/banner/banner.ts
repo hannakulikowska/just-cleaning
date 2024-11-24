@@ -9,12 +9,12 @@ export function createBanner() {
 
   bannerSection.id = 'banner-section';
   bannerSection.className = 'w-full bg-neutral pt-2 sm:pt-6';
-  bannerContainer.className =
-    'relative w-full max-w-9xl max-h-[90vh] mx-auto overflow-hidden rounded-3xl';
+  bannerContainer.className = 'relative w-full max-w-9xl mx-auto overflow-hidden rounded-3xl';
   bannerImage.src = BannerImage;
-  bannerImage.alt = 'Extraction cleaning';
+  bannerImage.alt = 'Pranie mebli tapicerowanych';
+  bannerImage.loading = 'lazy';
   bannerImage.className =
-    'w-full h-full max-h-[90vh] object-cover object-right rounded-3xl scale-125';
+    'w-full min-h-80 md:max-h-[90vh] object-cover object-center rounded-3xl scale-125';
   overlay.className = 'absolute inset-0 bg-dark/50 rounded-3xl';
 
   bannerSection.appendChild(bannerContainer);
