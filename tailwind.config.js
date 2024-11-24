@@ -34,9 +34,17 @@ export default {
         white: "#ffffff",
         transparent: "transparent",
       },
+      content: {
+        'vacuum': 'url("/src/assets/svg/vacuum.svg")',
+        'chemical': 'url("/src/assets/svg/experiment.svg")',
+        'thumb': 'url("/src/assets/svg/thumb_up.svg")',
+        'verified': 'url("/src/assets/svg/verified.svg")',
+        'team': 'url("/src/assets/svg/team.svg")',
+      },
     },
   },
   plugins: [
+    require('@tailwindcss/container-queries'),
     plugin(function({ addBase, addComponents, addUtilities, theme }) {
       addBase({
         'h1': {
