@@ -1,6 +1,7 @@
 import { createBanner } from '../components/banner/banner';
 import { createHeader } from '../components/header/header';
 import { createFeatureSection } from '../components/feature/feature';
+import { createAboutSection } from '../components/about/about';
 
 export function loadHomePage() {
   const mainContainer = document.createElement('div');
@@ -12,6 +13,7 @@ export function loadHomePage() {
   mainContainer.appendChild(createHeader());
   mainContainer.appendChild(mainContent);
   mainContent.appendChild(createBanner());
+  mainContent.appendChild(createAboutSection());
   mainContent.appendChild(createFeatureSection());
 
   document.body.prepend(mainContainer);
