@@ -1,16 +1,12 @@
 import { createCards } from './cards';
 import { createHeadline } from './headline';
+import { createSection } from '../section';
 
 export function createFeatureSection() {
-  const container = document.createElement('div');
-  const section = document.createElement('section');
+  const headline = createHeadline();
+  const cards = createCards();
 
-  container.className = 'w-full bg-neutral py-12 md:py-12 lg:py-20';
-  section.className = 'max-w-9xl mx-auto';
+  const section = createSection([headline, cards], 'bg-neutral');
 
-  container.appendChild(section);
-  section.appendChild(createHeadline());
-  section.appendChild(createCards());
-
-  return container;
+  return section;
 }
