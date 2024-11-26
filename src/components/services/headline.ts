@@ -3,7 +3,7 @@ export function createHeadline() {
   const eyebrow = document.createElement('h4');
   const title = document.createElement('h2');
 
-  container.className = 'lg:mx-auto max-w-3xl lg:text-center';
+  container.className = 'lg:mx-auto max-w-3xl xs:text-center';
   eyebrow.className = 'i-before h4-eyebrow';
   title.className = 'h2-title';
 
