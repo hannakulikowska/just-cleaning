@@ -36,6 +36,8 @@ export default {
       },
       content: {
         'vacuum': 'url("/src/assets/svg/vacuum.svg")',
+        'wave': 'url("/src/assets/images/bg-wave.png")',
+        'cleaner': 'url("/src/assets/images/vacuum-cleaner-.png")',
         'chemical': 'url("/src/assets/svg/experiment.svg")',
         'thumb': 'url("/src/assets/svg/thumb_up.svg")',
         'verified': 'url("/src/assets/svg/verified.svg")',
