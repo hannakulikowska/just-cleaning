@@ -4,8 +4,8 @@ export function createSection(children?: HTMLElement | HTMLElement[], additional
   const container = document.createElement('div');
   const section = document.createElement('section');
 
-  container.className = `w-full py-12 lg:py-20 ${additionalClasses || ''}`;
-  section.className = 'max-w-9xl mx-auto';
+  container.className = `w-full py-12 lg:py-32 ${additionalClasses || ''}`;
+  section.className = 'max-w-9xl mx-auto px-2 sm:px-6';
 
   if (children) {
     appendChildren(section, children);
