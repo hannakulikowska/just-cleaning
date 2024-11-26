@@ -1,19 +1,21 @@
-import { createBanner } from '../components/banner/banner';
+import { createHeroSection } from '../components/hero/hero';
 import { createHeader } from '../components/header/header';
 import { createFeatureSection } from '../components/feature/feature';
 import { createAboutSection } from '../components/about/about';
+import { createServicesSection } from '../components/services/services';
 
 export function loadHomePage() {
   const mainContainer = document.createElement('div');
   const mainContent = document.createElement('main');
 
   mainContainer.id = 'home-page';
-  mainContainer.className = 'relative min-h-screen bg-neutral px-2 sm:px-6';
+  mainContainer.className = 'relative min-h-screen bg-neutral';
 
   mainContainer.appendChild(createHeader());
   mainContainer.appendChild(mainContent);
-  mainContent.appendChild(createBanner());
+  mainContent.appendChild(createHeroSection());
   mainContent.appendChild(createAboutSection());
+  mainContent.appendChild(createServicesSection());
   mainContent.appendChild(createFeatureSection());
 
   document.body.prepend(mainContainer);
