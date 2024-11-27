@@ -12,7 +12,8 @@ export function createText() {
   textContainer.className =
     'absolute inset-0 flex flex-col items-center justify-center text-center text-white p-6 pt-12';
   textWrapper.className = 'relative';
-  subtitle.className = 'uppercase font-semibold tracking-widest text-[10px]/5 sm:text-sm/9';
+  subtitle.className =
+    'invisible md:visible uppercase font-semibold tracking-widest text-[10px]/5 sm:text-sm/9';
   title.className =
     'font-quicksand uppercase font-bold tracking-wide text-3xl xs:text-4xl sm:text-5xl lg:text-7xl mt-2';
   content.className =
