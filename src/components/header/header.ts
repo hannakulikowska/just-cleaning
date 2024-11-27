@@ -1,5 +1,5 @@
 import { createBurgerButton } from './burgerButton';
-import { createLogo } from './logo';
+import { createLogo } from '../logo';
 import { createNav } from './nav';
 import { createOverlay } from './overlay';
 import { createPhoneButton } from './phoneButton';

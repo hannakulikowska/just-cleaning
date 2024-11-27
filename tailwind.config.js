@@ -23,6 +23,7 @@ export default {
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
         quicksand: ['Quicksand', 'sans-serif'],
+        satisfy: ['Satisfy', 'cursive'],
       },
       colors: {
         primary: "#fba311",
