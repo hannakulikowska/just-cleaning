@@ -6,7 +6,7 @@ export function createButtons() {
 
   const buttonOffer = createButton(
     'Oferta',
-    '/offer',
+    '/#service',
     'btn-white hidden xs:inline',
     'Sprawdź naszą ofertę'
   );

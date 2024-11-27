@@ -14,7 +14,7 @@ export function createNav() {
 
   const navLinks = [
     { text: 'Strona główna', href: '/', isCurrent: true },
-    { text: 'Usługi', href: '/services', isCurrent: false },
+    { text: 'Usługi', href: '/#service', isCurrent: false },
     { text: 'Kontakt', href: '/contact', isCurrent: false },
   ].map(({ text, href, isCurrent }) => {
     const li = document.createElement('li');
