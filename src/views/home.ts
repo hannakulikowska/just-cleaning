@@ -4,6 +4,7 @@ import { createFeatureSection } from '../components/feature/feature';
 import { createAboutSection } from '../components/about/about';
 import { createServicesSection } from '../components/services/services';
 import { createStepsSection } from '../components/steps/steps';
+import { createPriceSection } from '../components/price/price';
 
 export function loadHomePage() {
   const mainContainer = document.createElement('div');
@@ -19,6 +20,7 @@ export function loadHomePage() {
   mainContent.appendChild(createServicesSection());
   mainContent.appendChild(createFeatureSection());
   mainContent.appendChild(createStepsSection());
+  mainContent.appendChild(createPriceSection());
 
   document.body.prepend(mainContainer);
 }
