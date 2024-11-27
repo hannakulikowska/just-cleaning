@@ -14,7 +14,7 @@ export function createSocialLinks() {
     a.setAttribute('aria-label', label);
     a.rel = 'noopener noreferrer';
     a.className =
-      'flex justify-center items-center size-12 bg-primary hover:bg-dark rounded-full transition-all duration-300 is-in-out';
+      'flex justify-center items-center size-12 hover:bg-primary bg-dark rounded-full transition-all duration-300 is-in-out';
 
     const img = document.createElement('img');
     img.src = imgSrc;
