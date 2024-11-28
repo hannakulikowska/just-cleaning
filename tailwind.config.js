@@ -44,6 +44,9 @@ export default {
         'verified': 'url("/src/assets/svg/verified.svg")',
         'team': 'url("/src/assets/svg/team.svg")',
       },
+      backgroundImage: {
+        'footer': "url('/src/assets/images/bg-footer.png')",
+      }
     },
   },
   plugins: [
