@@ -5,18 +5,18 @@ export function createSection(
   additionalClasses?: string,
   id?: string
 ) {
-  const container = document.createElement('div');
   const section = document.createElement('section');
+  const container = document.createElement('div');
 
-  container.id = `${id}`;
-  container.className = `w-full py-12 lg:py-32 ${additionalClasses || ''}`;
-  section.className = 'max-w-9xl mx-auto px-2 sm:px-6';
+  section.id = `${id}`;
+  section.className = `w-full py-12 lg:py-32 ${additionalClasses || ''}`;
+  container.className = 'max-w-9xl mx-auto px-2 sm:px-6';
 
   if (children) {
-    appendChildren(section, children);
+    appendChildren(container, children);
   }
 
-  container.appendChild(section);
+  section.appendChild(container);
 
-  return container;
+  return section;
 }
