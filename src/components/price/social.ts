@@ -1,11 +1,11 @@
-import { socialLinks } from './linksData';
+import { contactData } from '../../data/contactIcons';
 
 export function createSocialLinks() {
   const ul = document.createElement('ul');
 
-  ul.className = 'flex gap-6 justify-start items-center mt-6';
+  ul.className = 'flex gap-6 justify-start items-center mt-8';
 
-  socialLinks.forEach(({ href, imgSrc, imgAlt, label }) => {
+  contactData.forEach(({ href, imgSrc, imgAlt, label }) => {
     const li = document.createElement('li');
     li.className = 'list-none';
 
