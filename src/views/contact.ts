@@ -1,7 +1,7 @@
 import { createFooter } from '../components/footer/footer';
 import { createHeader } from '../components/header/header';
-import { createHero } from '../components/contact-page/hero/hero';
-import { createContent } from '../components/contact-page/hero/content';
+import { createHero } from '../components/pages/contact-page/hero';
+import { createContent } from '../components/pages/contact-page/content';
 
 export function loadContactPage() {
   const mainContainer = document.createElement('div');
