@@ -20,11 +20,11 @@ export const stepsData = [
     img: '/src/assets/images/5.png',
   },
   {
-    title: '6. Podstawowy etap prania',
+    title: '6. Dogłębne czyszczenie metodą ekstrakcyjną',
     img: '/src/assets/images/6.png',
   },
   {
-    title: '7. Ekologiczne pranie',
+    title: '7. Płukanie',
     img: '/src/assets/images/7.png',
   },
   {
