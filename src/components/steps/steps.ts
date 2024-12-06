@@ -9,7 +9,6 @@ export function createStepsSection() {
   container.className =
     'relative bg-dark rounded-3xl before:content-wave before:absolute before:top-0 before:left-0 before-inset-0 px-4 py-12 sm:p-12 lg:py-32';
 
-  const section = createSection(container, 'home-steps');
   const headline = createHeadline();
 
   const list = document.createElement('ol');
@@ -24,5 +23,5 @@ export function createStepsSection() {
   container.appendChild(headline);
   container.appendChild(list);
 
-  return section;
+  return createSection(container, 'home-steps', 'overflow-hidden');
 }
