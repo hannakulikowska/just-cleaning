@@ -10,8 +10,7 @@ export function createLogo() {
 
   logo.className = 'flex items-center basis-1/3 mt-4 pl-2';
   img.className = 'h-7 me-4 sm:h-12';
-  name.className =
-    'self-center text-xl lg:text-2xl font-satisfy whitespace-nowrap text-white lg:text-primary';
+  name.className = 'self-center text-xl md:text-3xl font-satisfy whitespace-nowrap text-white';
 
   name.textContent = 'Just Cleaning';
 
