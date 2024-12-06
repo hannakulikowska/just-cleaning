@@ -6,7 +6,7 @@ export function createServicesSection() {
   const headline = createHeadline();
   const cards = createCards();
 
-  const section = createSection([headline, cards], 'bg-white', 'service');
+  const section = createSection([headline, cards], 'home-services');
 
   return section;
 }

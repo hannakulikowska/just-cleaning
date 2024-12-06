@@ -6,7 +6,7 @@ export function createFeatureSection() {
   const headline = createHeadline();
   const cards = createCards();
 
-  const section = createSection([headline, cards], 'bg-neutral');
+  const section = createSection([headline, cards], 'home-feature');
 
   return section;
 }
