@@ -5,11 +5,11 @@ import { cities } from '../../data/cities';
 
 export function createContent() {
   const content = document.createElement('div');
-  content.className = 'flex flex-wrap gap-x-24 text-blue';
+  content.className = 'flex flex-wrap gap-x-24 gap-y-12 text-blue';
 
   function createTextColumn(items: string[]) {
     const column = document.createElement('div');
-    column.className = 'flex flex-col gap-y-2';
+    column.className = 'flex flex-col gap-y-2 min-w-[166px]';
     items.forEach((item) => {
       const p = document.createElement('p');
       p.textContent = item;

@@ -8,7 +8,7 @@ import { toggleMenu } from '../../utils/toggleMenu';
 export function createHeader() {
   const header = document.createElement('header');
   header.className =
-    'max-w-9xl absolute z-[8] left-0 right-0 mx-auto w-full flex items-center justify-between bg-transparent pt-2 sm:pt-6 px-6 sm:px-12';
+    'max-w-9xl absolute z-[8] left-0 right-0 mx-auto w-full flex items-center justify-between bg-transparent px-6 sm:px-12';
 
   const burgerButton = createBurgerButton();
   const { nav, closeButton } = createNav();
