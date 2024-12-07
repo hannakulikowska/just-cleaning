@@ -9,7 +9,7 @@ export function loadContactPage() {
 
   mainContainer.id = 'contact-page';
   mainContainer.className = 'relative min-h-screen bg-white pt-2 sm:pt-6';
-  mainContent.className = 'px-2 sm:px-6 flex flex-col gap-y-32';
+  mainContent.className = 'px-2 sm:px-6 flex flex-col gap-y-12 md:gap-y-24';
 
   mainContainer.appendChild(createHeader());
   mainContainer.appendChild(mainContent);

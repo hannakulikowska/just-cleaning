@@ -46,7 +46,8 @@ export function createContent() {
   const socialLinks = createSocialLinks();
   const section = createSection(
     [title, textBox1, textBox2, textBox3, socialLinks],
-    'contact-content'
+    'contact-content',
+    'mb-12'
   );
 
   return section;
