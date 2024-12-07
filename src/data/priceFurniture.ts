@@ -1,0 +1,16 @@
+export const furnitureCleaningPriceData = [
+  { service: 'Kanapa 2-osobowa (mała)', price: '120 zł' },
+  { service: 'Kanapa 3-osobowa (średnia)', price: '150 zł' },
+  { service: 'Kanapa 4-osobowa (duża)', price: '180 zł' },
+  { service: 'Część rozkładana kanapy (sypialna)', price: '40 zł' },
+  { service: 'Narożnik mały', price: '180 zł' },
+  { service: 'Narożnik średni', price: '220 zł' },
+  { service: 'Narożnik duży', price: '260 zł' },
+  { service: 'Fotel', price: '80 zł' },
+  { service: 'Krzesło tapicerowane', price: '30 zł' },
+  { service: 'Pufa', price: '40 zł' },
+  { service: 'Wezgłowie łóżka (proste)', price: '80 zł' },
+  { service: 'Wezgłowie łóżka (dekoracyjne, np. pikowane)', price: '100 zł' },
+  { service: 'Boki łóżka', price: '50 zł' },
+  { service: 'Elementy dekoracyjne', price: '20 zł' },
+];
