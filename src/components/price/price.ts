@@ -9,9 +9,8 @@ export function createPriceSection() {
 
   container.className = 'grid grid-cols-1 lg:grid-cols-2 gap-4';
 
-  const section = createSection(container, 'home-price');
   container.appendChild(headline);
   container.appendChild(img);
 
-  return section;
+  return createSection(container, 'home-price', 'mb-12');
 }
