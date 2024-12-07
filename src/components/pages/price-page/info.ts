@@ -12,8 +12,10 @@ export function insertAdditionalInfo() {
   const infoItems = [
     { text: 'Dojazd na terenie Stargardu: Gratis.' },
     { text: 'Dojazd poza Stargard: 1 zł/km.' },
-    { text: 'Minimalna wartość zamówienia: 100 zł.' },
-    { text: 'Jeśli masz pytania lub potrzebujesz indywidualnej wyceny, skontaktuj się z nami.' },
+    { text: 'Minimalna wartość zamówienia: 150 zł.' },
+    {
+      text: 'Jeśli mają Państwo pytania lub potrzebują indywidualnej wyceny, zapraszamy do kontaktu z nami.',
+    },
   ];
 
   const list = document.createElement('ul');
