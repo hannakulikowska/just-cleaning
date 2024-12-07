@@ -21,7 +21,7 @@ export function createNav() {
     { text: 'Kontakt', href: '/contact' },
   ].map(({ text, href }) => {
     const li = document.createElement('li');
-    li.className = 'relative px-6 py-8 lg:dots group cursor-pointer';
+    li.className = 'relative lg:dots group cursor-pointer';
 
     const link = document.createElement('a');
     li.appendChild(link);
@@ -30,7 +30,7 @@ export function createNav() {
 
     const isCurrent = currentPath === new URL(href, window.location.origin).pathname;
 
-    link.className = `font-quicksand uppercase font-bold text-sm tracking-wide text-dark group-hover:text-primary whitespace-nowrap transition-[color] duration-300 ${isCurrent ? 'text-primary' : ''}`;
+    link.className = `font-quicksand uppercase font-bold text-sm tracking-wide text-dark group-hover:text-primary whitespace-nowrap transition-[color] duration-300 ${isCurrent ? 'text-primary' : ''} px-6 py-8 inline-block`;
 
     if (isCurrent) {
       link.setAttribute('aria-current', 'page');

@@ -10,7 +10,7 @@
     content: '\2022';
     position: absolute;
     font-size: 1.5em;
-    margin-left: 1.3rem;
+    margin-left: -0.3rem;
     top: 50%;
     transform: translateY(-50%);
     color: #fba311;
